@@ -1,0 +1,17 @@
+machine:
+  java:
+    version: openjdk8
+
+dependencies:
+  pre:
+    - echo y | android update sdk --no-ui --all --filter "android-27"
+    - echo y | android update sdk --no-ui --all --filter "build-tools-27.0.1"
+    - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"
+    - echo y | android update sdk --no-ui --all --filter "extra-google-m2repository"
+    - chmod +x gradlew
+
+test:
+  override:
+    - ./gradlew dependencyUpdates -Drevision=release -DoutputFormatter=plain assembleDebug
+    # copy the build outputs to artifacts
+    - cp -r app/build/outputs $CIRCLE_ARTIFACTS
