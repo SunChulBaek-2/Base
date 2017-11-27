@@ -7,10 +7,10 @@ buildscript {
         minSdkVersion = '21'
         targetSdkVersion = '27'
         versionCode = '1'
-        versionName = '0.1'
+        versionName = '0.0.1'
 
         // dependencies
-        kotlin_version = '1.1.60'
+        kotlin_version = '1.1.51'
         support_version = '27.0.1'
     }
 
