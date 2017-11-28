@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context="kr.pe.ssun.demobase.SplashActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        app:title="@string/app_name"
-        app:subtitle="@string/app_name"/>
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:attr/actionBarSize"-->
+        <!--app:title="@string/app_name"-->
+        <!--app:subtitle="@string/app_name"/>-->
 
     <TextView
         android:layout_width="wrap_content"
