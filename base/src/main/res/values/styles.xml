@@ -2,22 +2,36 @@
 <resources>
     <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
+    <style name="BaseTheme.ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <!-- White Text -->
+    <style name="BaseTheme.WhiteTextToolbarStyle" parent="BaseTheme.ToolbarStyle">
+        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleWhiteTextStyle</item>
+        <item name="subtitleTextAppearance">@style/BaseTheme.Toolbar.SubtitleWhiteTextStyle</item>
+    </style>
+
     <style name="BaseTheme.Toolbar.TitleWhiteTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/base_white_primary</item>
+    </style>
+
+    <style name="BaseTheme.Toolbar.SubtitleWhiteTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/base_white_secondary</item>
+    </style>
+
+    <!-- Black Text -->
+    <style name="BaseTheme.BlackTextToolbarStyle" parent="BaseTheme.ToolbarStyle">
+        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleBlackTextStyle</item>
+        <item name="subtitleTextAppearance">@style/BaseTheme.Toolbar.SubtitleBlackTextStyle</item>
     </style>
 
     <style name="BaseTheme.Toolbar.TitleBlackTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/base_dark_primary</item>
     </style>
 
-    <style name="BaseTheme.WhiteTextToolbarStyle" parent="Widget.AppCompat.Toolbar">
-        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleWhiteTextStyle</item>
-        <item name="android:background">?attr/colorPrimary</item>
-    </style>
-
-    <style name="BaseTheme.BlackTextToolbarStyle" parent="Widget.AppCompat.Toolbar">
-        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleBlackTextStyle</item>
-        <item name="android:background">?attr/colorPrimary</item>
+    <style name="BaseTheme.Toolbar.SubtitleBlackTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/base_dark_secondary</item>
     </style>
 
     <!-- Red -->
