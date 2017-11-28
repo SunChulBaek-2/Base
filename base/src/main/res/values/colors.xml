@@ -296,4 +296,16 @@
     <color name="base_blue_grey_700">#455A64</color>
     <color name="base_blue_grey_800">#37474F</color>
     <color name="base_blue_grey_900">#263238</color>
+
+    <!-- Dark Text Colors -->
+    <color name="base_dark_primary">#DD000000</color> <!-- 87% -->
+    <color name="base_dark_secondary">#89000000</color> <!-- 54% -->
+    <color name="base_dark_disabled">#60000000</color> <!-- 38% -->
+    <color name="base_dark_dividers">#1E000000</color> <!-- 12% -->
+
+    <!-- White Text Colors -->
+    <color name="base_white_primary">#FFFFFFFF</color> <!-- 100% -->
+    <color name="base_white_secondary">#b2FFFFFF</color> <!-- 70% -->
+    <color name="base_white_disabled">#7FFFFFFF</color> <!-- 38% -->
+    <color name="base_white_dividers">#1EFFFFFF</color> <!-- 12% -->
 </resources>

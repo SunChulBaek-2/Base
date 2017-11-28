@@ -1,174 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Theme.Base.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
 
-    <style name="BaseTheme.Toolbar.TitleWhiteTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
+    <style name="Theme.Base.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar"/>
 
-    <style name="BaseTheme.Toolbar.TitleBlackTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@android:color/black</item>
-    </style>
-
-    <style name="BaseTheme.WhiteTextToolbarStyle" parent="Widget.AppCompat.Toolbar">
-        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleWhiteTextStyle</item>
+    <style name="Widget.Base.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 
-    <style name="BaseTheme.BlackTextToolbarStyle" parent="Widget.AppCompat.Toolbar">
-        <item name="titleTextAppearance">@style/BaseTheme.Toolbar.TitleBlackTextStyle</item>
-        <item name="android:background">?attr/colorPrimary</item>
+    <!-- White Text -->
+    <style name="Widget.Base.Toolbar.WhiteText" parent="Widget.Base.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Title.WhiteText</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Subtitle.WhiteText</item>
+    </style>
+
+    <style name="Widget.Base.ActionBar.WhiteText" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/TextAppearance.Base.ActionBar.Title.WhiteText</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Base.ActionBar.Subtitle.WhiteText</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Base.Toolbar.Title.WhiteText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/base_white_primary</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Base.Toolbar.Subtitle.WhiteText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/base_white_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Base.ActionBar.Title.WhiteText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/base_white_primary</item>
+    </style>
+
+    <style name="TextAppearance.Base.ActionBar.Subtitle.WhiteText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/base_white_secondary</item>
+    </style>
+
+    <!-- Black Text -->
+    <style name="Widget.Base.Toolbar.BlackText" parent="Widget.Base.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Title.BlackText</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Subtitle.BlackText</item>
+    </style>
+
+    <style name="Widget.Base.ActionBar.BlackText" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/TextAppearance.Base.Widget.ActionBar.Title.BlackText</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Base.Widget.ActionBar.Subtitle.BlackText</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Base.Toolbar.Title.BlackText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/base_dark_primary</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Base.Toolbar.Subtitle.BlackText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/base_dark_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Base.Widget.ActionBar.Title.BlackText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/base_dark_primary</item>
+    </style>
+
+    <style name="TextAppearance.Base.Widget.ActionBar.Subtitle.BlackText" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/base_dark_secondary</item>
     </style>
 
     <!-- Red -->
-    <style name="BaseTheme.Red" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Red" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_red_500</item>
         <item name="colorPrimaryDark">@color/base_red_700</item>
         <item name="colorAccent">@color/base_teal_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Red" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_red_500</item>
+        <item name="colorPrimaryDark">@color/base_red_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Pink -->
-    <style name="BaseTheme.Pink" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Pink" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_pink_500</item>
         <item name="colorPrimaryDark">@color/base_pink_700</item>
         <item name="colorAccent">@color/base_teal_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Pink" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_pink_500</item>
+        <item name="colorPrimaryDark">@color/base_pink_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Purple -->
-    <style name="BaseTheme.Purple" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Purple" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_purple_500</item>
         <item name="colorPrimaryDark">@color/base_purple_700</item>
         <item name="colorAccent">@color/base_teal_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Purple" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_purple_500</item>
+        <item name="colorPrimaryDark">@color/base_purple_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Deep Purple -->
-    <style name="BaseTheme.DeepPurple" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.DeepPurple" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_deep_purple_500</item>
         <item name="colorPrimaryDark">@color/base_deep_purple_700</item>
         <item name="colorAccent">@color/base_teal_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.DeepPurple" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_deep_purple_500</item>
+        <item name="colorPrimaryDark">@color/base_deep_purple_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Indigo -->
-    <style name="BaseTheme.Indigo" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Indigo" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_indigo_500</item>
         <item name="colorPrimaryDark">@color/base_indigo_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Indigo" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_indigo_500</item>
+        <item name="colorPrimaryDark">@color/base_indigo_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Blue -->
-    <style name="BaseTheme.Blue" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Blue" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_blue_500</item>
         <item name="colorPrimaryDark">@color/base_blue_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Blue" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_blue_500</item>
+        <item name="colorPrimaryDark">@color/base_blue_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Light Blue -->
-    <style name="BaseTheme.LightBlue" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.LightBlue" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_light_blue_500</item>
         <item name="colorPrimaryDark">@color/base_light_blue_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.LightBlue" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_light_blue_500</item>
+        <item name="colorPrimaryDark">@color/base_light_blue_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Cyan -->
-    <style name="BaseTheme.Cyan" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Cyan" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_cyan_500</item>
         <item name="colorPrimaryDark">@color/base_cyan_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Cyan" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_cyan_500</item>
+        <item name="colorPrimaryDark">@color/base_cyan_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Teal -->
-    <style name="BaseTheme.Teal" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Teal" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_teal_500</item>
         <item name="colorPrimaryDark">@color/base_teal_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Teal" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_teal_500</item>
+        <item name="colorPrimaryDark">@color/base_teal_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Green -->
-    <style name="BaseTheme.Green" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Green" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_green_500</item>
         <item name="colorPrimaryDark">@color/base_green_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Green" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_green_500</item>
+        <item name="colorPrimaryDark">@color/base_green_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Light Green -->
-    <style name="BaseTheme.LightGreen" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.LightGreen" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_light_green_500</item>
         <item name="colorPrimaryDark">@color/base_light_green_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.LightGreen" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_light_green_500</item>
+        <item name="colorPrimaryDark">@color/base_light_green_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Lime -->
-    <style name="BaseTheme.Lime" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Lime" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_lime_500</item>
         <item name="colorPrimaryDark">@color/base_lime_700</item>
         <item name="colorAccent">@color/base_pink_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Lime" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_lime_500</item>
+        <item name="colorPrimaryDark">@color/base_lime_700</item>
+        <item name="colorAccent">@color/base_pink_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Yellow -->
-    <style name="BaseTheme.Yellow" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Yellow" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_yellow_500</item>
         <item name="colorPrimaryDark">@color/base_yellow_700</item>
         <item name="colorAccent">@color/base_purple_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Yellow" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_yellow_500</item>
+        <item name="colorPrimaryDark">@color/base_yellow_700</item>
+        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Amber -->
-    <style name="BaseTheme.Amber" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Amber" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_amber_500</item>
         <item name="colorPrimaryDark">@color/base_amber_700</item>
         <item name="colorAccent">@color/base_purple_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Amber" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_amber_500</item>
+        <item name="colorPrimaryDark">@color/base_amber_700</item>
+        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Orange -->
-    <style name="BaseTheme.Orange" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Orange" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_orange_500</item>
         <item name="colorPrimaryDark">@color/base_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Orange" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_orange_500</item>
+        <item name="colorPrimaryDark">@color/base_orange_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Deep Orange -->
-    <style name="BaseTheme.DeepOrange" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.DarkOrange" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_deep_orange_500</item>
         <item name="colorPrimaryDark">@color/base_deep_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.DeepOrange" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_deep_orange_500</item>
+        <item name="colorPrimaryDark">@color/base_deep_orange_700</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Brown -->
-    <style name="BaseTheme.Brown" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Brown" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_brown_500</item>
         <item name="colorPrimaryDark">@color/base_brown_700</item>
         <item name="colorAccent">@color/base_yellow_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Brown" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_brown_500</item>
+        <item name="colorPrimaryDark">@color/base_brown_700</item>
+        <item name="colorAccent">@color/base_yellow_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 
     <!-- Grey -->
-    <style name="BaseTheme.Grey" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.Grey" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_grey_500</item>
         <item name="colorPrimaryDark">@color/base_grey_700</item>
         <item name="colorAccent">@color/base_yellow_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.BlackTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.Grey" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_grey_500</item>
+        <item name="colorPrimaryDark">@color/base_grey_700</item>
+        <item name="colorAccent">@color/base_yellow_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
 
     <!-- Blue Grey -->
-    <style name="BaseTheme.BlueGrey" parent="BaseTheme">
+    <style name="Theme.Base.NoActionBar.BlueGrey" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_blue_grey_500</item>
         <item name="colorPrimaryDark">@color/base_blue_grey_700</item>
         <item name="colorAccent">@color/base_yellow_a200</item>
-        <item name="toolbarStyle">@style/BaseTheme.WhiteTextToolbarStyle</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
+    </style>
+
+    <style name="Theme.Base.DarkActionBar.BlueGrey" parent="Theme.Base.DarkActionBar">
+        <item name="colorPrimary">@color/base_blue_grey_500</item>
+        <item name="colorPrimaryDark">@color/base_blue_grey_700</item>
+        <item name="colorAccent">@color/base_yellow_a200</item>
+        <item name="toolbarStyle">@style/Widget.Base.Toolbar.WhiteText</item>
+        <item name="actionBarStyle">@style/Widget.Base.ActionBar.WhiteText</item>
     </style>
 </resources>
