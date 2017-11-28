@@ -14,7 +14,7 @@
         <item name="subtitleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Subtitle.WhiteText</item>
     </style>
 
-    <style name="Widget.Base.ActionBar.WhiteText" parent="Widget.AppCompat.Light.ActionBar">
+    <style name="Widget.Base.ActionBar.WhiteText" parent="Widget.AppCompat.Light.ActionBar.Solid">
         <item name="titleTextStyle">@style/TextAppearance.Base.ActionBar.Title.WhiteText</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Base.ActionBar.Subtitle.WhiteText</item>
     </style>
@@ -41,7 +41,7 @@
         <item name="subtitleTextAppearance">@style/TextAppearance.Widget.Base.Toolbar.Subtitle.BlackText</item>
     </style>
 
-    <style name="Widget.Base.ActionBar.BlackText" parent="Widget.AppCompat.Light.ActionBar">
+    <style name="Widget.Base.ActionBar.BlackText" parent="Widget.AppCompat.Light.ActionBar.Solid">
         <item name="titleTextStyle">@style/TextAppearance.Base.Widget.ActionBar.Title.BlackText</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Base.Widget.ActionBar.Subtitle.BlackText</item>
     </style>
@@ -304,7 +304,7 @@
     <style name="Theme.Base.NoActionBar.Orange" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_orange_500</item>
         <item name="colorPrimaryDark">@color/base_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
         <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
         <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
@@ -312,7 +312,7 @@
     <style name="Theme.Base.DarkActionBar.Orange" parent="Theme.Base.DarkActionBar">
         <item name="colorPrimary">@color/base_orange_500</item>
         <item name="colorPrimaryDark">@color/base_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
         <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
         <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
@@ -321,7 +321,7 @@
     <style name="Theme.Base.NoActionBar.DarkOrange" parent="Theme.Base.NoActionBar">
         <item name="colorPrimary">@color/base_deep_orange_500</item>
         <item name="colorPrimaryDark">@color/base_deep_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
         <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
         <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
@@ -329,7 +329,7 @@
     <style name="Theme.Base.DarkActionBar.DeepOrange" parent="Theme.Base.DarkActionBar">
         <item name="colorPrimary">@color/base_deep_orange_500</item>
         <item name="colorPrimaryDark">@color/base_deep_orange_700</item>
-        <item name="colorAccent">@color/base_purple_a200</item>
+        <item name="colorAccent">@color/base_teal_a200</item>
         <item name="toolbarStyle">@style/Widget.Base.Toolbar.BlackText</item>
         <item name="actionBarStyle">@style/Widget.Base.ActionBar.BlackText</item>
     </style>
