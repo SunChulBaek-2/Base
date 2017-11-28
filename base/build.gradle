@@ -1,4 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.7.0'
+    }
+}
 
 android {
     println "[${this.project.name}] compileSdkVersion = ${rootProject.compileSdkVersion}"
@@ -36,4 +46,12 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // Support Libraries
     implementation "com.android.support:appcompat-v7:${support_version}"
+}
+
+publish {
+    repoName = 'android'
+    groupId = 'kr.pe.ssun'
+    artifactId = 'base'
+    publishVersion = "${rootProject.versionName}"
+    website = 'https://github.com/x1210x/Base'
 }
