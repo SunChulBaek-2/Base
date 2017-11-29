@@ -2,3 +2,5 @@
 * Theme
   * Theme.Base.NoActionBar.${Color}
   * Theme.Base.DarkActionBar.${Color}
+* Color
+  * base_${Color}_${Number}
