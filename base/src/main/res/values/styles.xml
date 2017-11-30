@@ -20,19 +20,19 @@
     </style>
 
     <style name="TextAppearance.Widget.Base.Toolbar.Title.WhiteText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@color/base_white_primary</item>
+        <item name="android:textColor">@color/base_text_white_primary</item>
     </style>
 
     <style name="TextAppearance.Widget.Base.Toolbar.Subtitle.WhiteText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
-        <item name="android:textColor">@color/base_white_secondary</item>
+        <item name="android:textColor">@color/base_text_white_secondary</item>
     </style>
 
     <style name="TextAppearance.Base.ActionBar.Title.WhiteText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/base_white_primary</item>
+        <item name="android:textColor">@color/base_text_white_primary</item>
     </style>
 
     <style name="TextAppearance.Base.ActionBar.Subtitle.WhiteText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/base_white_secondary</item>
+        <item name="android:textColor">@color/base_text_white_secondary</item>
     </style>
 
     <!-- Black Text -->
@@ -47,19 +47,19 @@
     </style>
 
     <style name="TextAppearance.Widget.Base.Toolbar.Title.BlackText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@color/base_dark_primary</item>
+        <item name="android:textColor">@color/base_text_dark_primary</item>
     </style>
 
     <style name="TextAppearance.Widget.Base.Toolbar.Subtitle.BlackText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
-        <item name="android:textColor">@color/base_dark_secondary</item>
+        <item name="android:textColor">@color/base_text_dark_secondary</item>
     </style>
 
     <style name="TextAppearance.Base.Widget.ActionBar.Title.BlackText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/base_dark_primary</item>
+        <item name="android:textColor">@color/base_text_dark_primary</item>
     </style>
 
     <style name="TextAppearance.Base.Widget.ActionBar.Subtitle.BlackText" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textColor">@color/base_dark_secondary</item>
+        <item name="android:textColor">@color/base_text_dark_secondary</item>
     </style>
 
     <!-- Red -->
